@@ -1,0 +1,306 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.ask-nav{
+    height: 10vh;
+    width: 100vw;
+    position: sticky;
+    z-index: 3;
+}
+
+.ask-nav img{
+    width: 80px;
+    height: 8vh;
+    margin-top: 1vh;
+    margin-left: 2vw;
+}
+
+.actions{
+    float: right;
+    margin-right: 2vw;
+    line-height: 10vh;
+}
+
+.login-btn{
+    border: none;
+    position: relative;
+    color: black;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: inherit;
+    padding-right: 10px;
+}
+
+.signin-btn,
+.start-btn{
+    border: none;
+    background-color: #EF233C;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 10px 28px;
+    
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+}
+ 
+.signin-btn::after,
+.start-btn::after{
+    content:'';
+    position: absolute;
+    z-index: -1;
+    border-radius: 24px;
+    transition: 0.2s ease;
+    border: 3px solid #A8192A;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translate(2px ,2px);
+    -webkit-transform: translate(2px ,2px);
+    -moz-transform: translate(2px ,2px);
+    -ms-transform: translate(2px ,2px);
+    -o-transform: translate(2px ,2px);
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+    -webkit-transition: 0.2s ease;
+    -moz-transition: 0.2s ease;
+    -ms-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+}
+
+.signin-btn:hover::after,
+.start-btn:hover::after{
+    box-shadow: 2px 2px 10px grey;
+}
+
+.left{
+    width: 50vw;
+    height: 100vh; 
+    background-color: #EF233C; 
+    position: relative; 
+    top: -10vh; 
+    z-index: 2; 
+    float:left;
+}
+
+.left img{
+    padding-top: 25vh; 
+    padding-left: 2vw;
+    width: 105%;
+}
+
+.right{
+    width: 50vw; 
+    height: 100vh; 
+    position: absolute; 
+    top: 0; 
+    left: 50vw; 
+    background-color: #E6E6E6;
+    z-index: 0; 
+    float:right;
+    text-align: center;
+}
+
+.right h1{
+    margin-top: 30%;
+    color: #2F2E41;
+    font-size: 100px;
+    transition: all 2s ease;
+    -webkit-transition:all 2s ease;
+    -moz-transition:all 2s ease;
+    -ms-transition:all 2s ease;
+    -o-transition:all 2s ease;
+}
+
+.right span{
+    color: #EF233C;
+}
+
+.right p{
+    width: 80%; 
+    display: inline-block; 
+    color: #2F2E41;
+}
+
+.clear{
+    clear: both;
+}
+
+@keyframes bounce{
+    0%{
+        transform: translateY(5%);
+        -webkit-transform: translateY(5%);
+        -moz-transform: translateY(5%);
+        -ms-transform: translateY(5%);
+        -o-transform: translateY(5%);
+    }
+    25%{
+        transform: translate(3%);
+        -webkit-transform: translate(3%);
+        -moz-transform: translate(3%);
+        -ms-transform: translate(3%);
+        -o-transform: translate(3%);
+}
+    50%{
+        transform: translate(0,0);
+        -webkit-transform: translate(0,0);
+        -moz-transform: translate(0,0);
+        -ms-transform: translate(0,0);
+        -o-transform: translate(0,0);
+    }
+    75%{
+        transform: translate(0,0);
+        -webkit-transform: translate(0,0);
+        -moz-transform: translate(0,0);
+        -ms-transform: translate(0,0);
+        -o-transform: translate(0,0);
+    }
+}
+
+.know-more img{
+    animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+}
+
+.signup-form{
+    display: inline-block; 
+    margin-top: 25vh
+}
+
+.login-form{
+    display: inline-block; 
+    margin-top: 40vh
+}
+
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #EF233C;
+    background-color:#eee;
+    margin:10px;
+    }
+
+    .div1{
+        width: 250px;
+        position: relative;
+    }
+
+    .name:focus ~ .floating-label1,
+    .name:not(:focus):valid ~ .floating-label1,
+    .email:focus ~ .floating-label2,
+    .email:not(:focus):valid ~ .floating-label2,
+    .year:focus ~ .floating-label3,
+    .year:not(:focus):valid ~ .floating-label3,
+    .regno:focus ~ .floating-label4,
+    .regno:not(:focus):valid ~ .floating-label4,
+    .username:focus ~ .floating-label5,
+    .username:not(:focus):valid ~ .floating-label5,
+    .pwd:focus ~ .floating-label6,
+    .pwd:not(:focus):valid ~ .floating-label6,
+    .pwdcnfrm:focus ~ .floating-label7,
+    .pwdcnfrm:not(:focus):valid ~ .floating-label7{
+    position: absolute;
+    top: 4px;
+    left: 10px;
+    font-size: 11px;
+    opacity: 1;
+    }
+
+    *:focus{
+    outline: none;
+    }
+
+    .name,
+    .email,
+    .year,
+    .regno,
+    .username,
+    .pwd,
+    .pwdcnfrm
+    {
+        background-color: #E6E6E6;
+    font-size: 1rem !important;
+    width: 250px !important;
+    height: 35px !important;
+    }
+
+    .message{
+    width: 400px;
+    }
+
+    .floating-label1,
+    .floating-label2,
+    .floating-label3,
+    .floating-label4,
+    .floating-label5,
+    .floating-label6,
+    .floating-label7
+    {
+    position: absolute;
+    pointer-events: none !important;
+    top:15px;
+    left: 10px;
+    transition: 0.2s ease all !important;
+    color: #2F2E41!important;
+    }
+    input{
+    border: none;
+    border-bottom: 2px solid #EF233C;
+    background-color:#eee;
+    margin:10px;
+    }
+
+    .usrnm:focus ~ .floating-label8,
+    .usrnm:not(:focus):valid ~ .floating-label8,
+    .psswd:focus ~ .floating-label9,
+    .psswd:not(:focus):valid ~ .floating-label9{
+    position: absolute;
+    top: 4px;
+    left: 10px;
+    font-size: 11px;
+    opacity: 1;
+    }
+
+    *:focus{
+    outline: none;
+    }
+
+    .usrnm,
+    .psswd
+    {
+    font-size: 1rem !important;
+    width: 250px !important;
+    height: 35px !important;
+    background-color: #E6E6E6;
+    }
+
+    .message{
+    width: 400px;
+    }
+
+    .floating-label8,
+    .floating-label9
+    {
+    position: absolute;
+    pointer-events: none !important;
+    top:15px;
+    left: 10px;
+    transition: 0.2s ease all !important;
+    color: #2F2E41!important;
+    }
+

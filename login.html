@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="ask-nav" >
+        <a href="./index.html"><img src="./ask_srm_logo.png"></a>
+        <div class="actions">
+            <a href="./login.html"><button class="login-btn" style="color: #EF233C;">Log In</button></a>
+            <a href="./signup.html"><button class="signin-btn">Sign Up</button></a>
+        </div>
+    </nav>
+        <div class="container">
+            <div class="left">
+                <img src="./landing-img.svg" >
+            </div>
+            <div class="right" >
+                <form class="login-form" action="/login" method="POST">
+                    <div class="div1">
+                        <input type="text" class="usrnm" name="email" required="">
+                        <span class="floating-label8">Email</span>
+                    </div>
+                    <div class="div1">
+                        <input type="text" class="psswd" name="password" required="">
+                        <span class="floating-label9">Password</span>
+                    </div><br>
+                    <button class="signin-btn">Login</button>
+                </form>
+                
+            </div>
+        </div>
+</body>
+</html>
